@@ -38,3 +38,12 @@ puts 5.4 * 3
 puts 5.4 * 3.2
 puts 5 / 2
 puts 5 / 2.0
+# ビット演算子
+# AND
+puts 11 & 14
+# OR
+puts 10 | 12
+# XOR
+puts 10 ^ 12
+# NOT
+puts ~10
