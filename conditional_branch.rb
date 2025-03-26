@@ -119,3 +119,8 @@ end
 # 条件演算子（三項演算子）
 result = 80
 puts result > 60 ? "合格" : "不合格"
+
+# 式修飾子
+point = 80
+puts "合格" if point > 70
+puts "不合格" unless point > 90
