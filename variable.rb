@@ -43,3 +43,14 @@ puts v2
 v1 << "Japan"
 puts v1
 puts v2
+
+# 変数に対して演算を行う
+num = 10
+sum = num + 20
+puts sum
+
+num1 = 10
+num2 = 8
+num3 = 15
+sum = num1 + num2 + num3
+puts sum
