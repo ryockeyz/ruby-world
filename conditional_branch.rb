@@ -88,3 +88,9 @@ elsif city == "Nagoya"
 else
   puts "日本"
 end
+
+# unless
+old = 40
+unless old < 20
+  puts "20以上です"
+end
