@@ -46,4 +46,9 @@ puts 10 | 12
 # XOR
 puts 10 ^ 12
 # NOT
-puts ~10
+puts ~ 10
+# シフト演算子
+# 左シフト
+puts 11 << 1
+# 右シフト
+puts 11 >> 1
