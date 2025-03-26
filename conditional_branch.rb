@@ -94,3 +94,24 @@ old = 40
 unless old < 20
   puts "20以上です"
 end
+
+# case
+fruit = "Apple"
+case fruit
+when "Orange"
+  puts "オレンジ"
+when "Apple"
+  puts "りんご"
+when "Melon"
+  puts "メロン"
+else
+  puts "フルーツ"
+end
+# まとめて比較
+food = "Apple"
+case food
+when "Apple","Orange"
+  puts "フルーツ"
+when "Carrot", "Potato"
+  puts "野菜"
+end
