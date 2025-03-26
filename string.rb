@@ -30,3 +30,5 @@ EOS
 puts "年齢は#{50-25}です"
 name = "test"
 puts "名前は#{name}です"
+# 文字列の連結
+puts "Hello" + "World"
