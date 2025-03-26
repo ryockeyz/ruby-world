@@ -68,3 +68,11 @@ num = 10
 if !(num > 20)
   puts "20以下です"
 end
+
+# else
+num = (10 % 3)
+if num == 0
+  puts "割り切れた"
+else
+  puts "割り切れなかった"
+end
