@@ -65,3 +65,10 @@ puts num
 num100 = 100
 num100 += 1
 puts num100
+
+# 変数へ多重代入を行う
+v1, v2, v3 = "Tokyo", "Osaka", "Kyoto"
+puts v1, v2, v3
+# 右辺に記述したオブジェクトが足りない場合はnilが代入される
+v4, v5, v6 = "Fukuoka", "Hokkaido"
+p v4, v5, v6
