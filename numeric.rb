@@ -20,3 +20,10 @@ puts 2.5e5
 puts 2.5e-4
 # アンダーバーを使った数値の3桁区切り
 puts 3_420_500
+# 四則演算
+puts 6 + 3
+puts 6 - 3
+puts 6 * 3
+puts 6 / 2
+puts 5 % 2
+puts 5 ** 2
