@@ -115,3 +115,7 @@ when "Apple","Orange"
 when "Carrot", "Potato"
   puts "野菜"
 end
+
+# 条件演算子（三項演算子）
+result = 80
+puts result > 60 ? "合格" : "不合格"
