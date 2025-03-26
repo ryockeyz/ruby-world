@@ -54,3 +54,14 @@ num2 = 8
 num3 = 15
 sum = num1 + num2 + num3
 puts sum
+
+# 変数に対して自己代入を行う
+num = 10
+puts num
+num = num + 1
+puts num
+# 自己代入演算子
+# 演算子の前に+をつけることで簡潔に記述できる
+num100 = 100
+num100 += 1
+puts num100
