@@ -34,3 +34,6 @@ puts "名前は#{name}です"
 puts "Hello" + "World"
 # 文字列を指定回数繰り返し
 puts "Good!" * 3
+# 文字列オブジェクトに文字列を追加
+puts "Tokyo" << ",Japan"
+puts "Kyoto".concat(",Japan")
