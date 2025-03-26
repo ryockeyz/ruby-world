@@ -32,3 +32,5 @@ name = "test"
 puts "名前は#{name}です"
 # 文字列の連結
 puts "Hello" + "World"
+# 文字列を指定回数繰り返し
+puts "Good!" * 3
