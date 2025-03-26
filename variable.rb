@@ -23,3 +23,23 @@ msg = "Bye"
 puts msg
 msg = 100
 puts msg
+
+# 変数に別の変数を代入する
+# 同じ値でも別のオブジェクト（ただし、整数の値やtrueなどは同じオブジェクト）
+v1 = "Tokyo"
+v2 = "Tokyo"
+puts v1.object_id
+puts v2.object_id
+# 変数に別の変数を入れた場合は同じオブジェクトを見に行く
+v1 = "Tokyo"
+v2 = v1
+puts v1.object_id
+puts v2.object_id
+# なので、どちらかの変数を使ってオブジェクトを変更するともう片方にも影響する
+v1 = "Tokyo"
+v2 = v1
+puts v1
+puts v2
+v1 << "Japan"
+puts v1
+puts v2
