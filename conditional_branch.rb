@@ -76,3 +76,15 @@ if num == 0
 else
   puts "割り切れなかった"
 end
+
+# elsif
+city = "Nagoya"
+if city == "Tokyo"
+  puts "東京"
+elsif city == "Osaka"
+  puts "大阪"
+elsif city == "Nagoya"
+  puts "名古屋"
+else
+  puts "日本"
+end
