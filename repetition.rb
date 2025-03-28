@@ -108,3 +108,16 @@ loop {
 # break文
 # 繰り返し処理から抜ける際に使用
 # 対象繰り返し処理（while、until、for、イテレータ（each、times、loopなど））
+
+# next文
+# 繰り返し処理の中でnext文が置かれると、next文後の処理は行わずに次の繰り返しに進む
+# 対象繰り返し処理（while、until、for、イテレータ（each、times、loopなど））
+# 複数の繰り返し処理が入れ子になっている場合、next文が実行された内側の繰り返しが次の繰り返しに進
+count = 0
+("aa".."az").each do |str|
+  count += 1
+  if count % 3 != 0
+    next
+  end
+  puts str
+end
