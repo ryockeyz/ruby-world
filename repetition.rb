@@ -78,3 +78,16 @@ end
 7.downto(3) do |num|
   puts num
 end
+
+# stepメソッド
+# Numericクラスで用意されているメソッド
+# IntegerだけでなくFloatでも使用可能
+# オブジェクト.step(limit, stepno) do |変数|
+# 1. オブジェクトで渡した数値を変数に代入し処理を実行
+# 2. 変数の値にstepnoの値を加算
+# 3. 変数の値がlimitを超えたら実行せず終了
+# stepnoは省略可能でその場合1を指定したことになる。負の値も指定可能
+# limitとstepnoは浮動小数も指定可能
+2.4.step(5.3, 0.8) do |num|
+  puts num
+end
