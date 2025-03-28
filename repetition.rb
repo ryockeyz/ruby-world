@@ -91,3 +91,16 @@ end
 2.4.step(5.3, 0.8) do |num|
   puts num
 end
+
+# loopメソッド
+# Kernelモジュールで用意されているメソッド
+# 繰り返し回数に制限のない場合に使用
+# 無限ループするので、必ず終了する処理を記述する必要がある
+num = 1
+loop {
+  puts num
+  num *= 2
+  if num > 1024
+    break
+  end
+}
