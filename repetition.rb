@@ -104,3 +104,7 @@ loop {
     break
   end
 }
+
+# break文
+# 繰り返し処理から抜ける際に使用
+# 対象繰り返し処理（while、until、for、イテレータ（each、times、loopなど））
