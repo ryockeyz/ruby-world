@@ -137,3 +137,13 @@ end
   end
   puts num
 end
+
+# 式修飾子
+# 1行で簡潔に書ける時などに使用
+# while文の例
+# 真の時に実行する式 while 条件式
+# if文、until文でも同様に書くことが可能
+num = 2
+puts num
+num *= 2 while num < 1000
+puts num
