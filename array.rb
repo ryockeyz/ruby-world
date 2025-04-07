@@ -60,3 +60,14 @@ ary11[3] = 4
 p ary11
 ary11[5] = 6
 p ary11
+
+# 配列に対する繰り返し処理
+# for文
+ary12 = ["Red", "Blue", "Green"]
+for var in ary12 do
+  puts var
+end
+# each文
+ary12.each {|var|
+  puts var
+}
