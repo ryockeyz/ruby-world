@@ -36,3 +36,9 @@ ary6 = ["Green", "Green"]
 ary7 = Array.new(ary6)
 p ary6
 p ary7
+
+# 配列の指定した要素へオブジェクトを代入
+ary8 = [1, 2, 3, 4, 5]
+p ary8
+ary8[1] = 22
+p ary8
