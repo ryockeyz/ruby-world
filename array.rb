@@ -71,3 +71,16 @@ end
 ary12.each {|var|
   puts var
 }
+
+# 多重配列の要素の取り出し
+ary13 = [["A", 1], ["B", 2], ["C", 3]]
+p ary13
+p ary13[0]
+p ary13[0][0]
+p ary13[0][1]
+p ary13[1]
+p ary13[1][0]
+p ary13[1][1]
+p ary13[2]
+p ary13[2][0]
+p ary13[2][1]
