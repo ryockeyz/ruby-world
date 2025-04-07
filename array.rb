@@ -42,3 +42,21 @@ ary8 = [1, 2, 3, 4, 5]
 p ary8
 ary8[1] = 22
 p ary8
+
+# 配列のサイズの取得
+ary9 = [1, 2, 3, 4, 5]
+p ary9.length
+p ary9.size
+# また、nilを含まないサイズを取得する場合はcountメソッドを使用
+ary10 = [1, nil, 3]
+p ary10.length
+p ary10.count {|item| !item.nil?}
+
+# 配列のサイズの拡大
+# 最大のインデックスよりも大きな要素を指定して代入した場合、自動で拡張される
+ary11 = [1, 2, 3]
+p ary11
+ary11[3] = 4
+p ary11
+ary11[5] = 6
+p ary11
