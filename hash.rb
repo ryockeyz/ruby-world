@@ -63,3 +63,19 @@ p hash9.default
 
 hash9.default = "undefined"
 p hash9.default
+
+# ハッシュへの新しい要素を追加と値の変更
+hash10 = {"Red" => 1, "Blue" => 2, "Green" => 3}
+p hash10
+hash10["Yellow"] = 4
+p hash10
+hash10["Yellow"] = 5
+p hash10
+
+# storeメソッドを使用
+hash10 = {"Red" => 1, "Blue" => 2, "Green" => 3}
+p hash10
+hash10.store("Yellow", 4)
+p hash10
+hash10.store("Yellow", 5)
+p hash10
