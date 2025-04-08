@@ -103,3 +103,10 @@ hash13.each_key {|key|
 hash13.each_value {|value|
   puts "#{value}"
 }
+
+# ハッシュに含まれるキーや値を配列として取得
+p hash13.keys
+p hash13.values
+
+# キーと値のペアの一覧を配列として取得
+p hash13.to_a
