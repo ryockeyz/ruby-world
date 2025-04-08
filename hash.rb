@@ -26,14 +26,18 @@ puts hash3
 # newを使用した方法：Hash.new([ifnone])
 # 空のハッシュオブジェクトを作成
 # ifnoneには存在しないキーを指定された時のdefault値を指定できる
+# # 存在しないキーを指定した場合指定したdefault値を返すが、ハッシュには追加されない
 hash4 = Hash.new("none")
 puts hash4
 p hash4["Red"]
 # ブロック付きのnew：Hash.new {|hash, key| ...}
+# キーごとのdefault値を設定することが可能
 # 空のハッシュオブジェクトを作成
+# 存在しないキーを指定した場合指定したdefault値を返しつつ、指定したキーとdefault値のペアでハッシュの最後尾に追加される
 hash5 = Hash.new {|hash, key| hash[key] = "none"}
-puts hash5
+puts "hash5: #{hash5}"
 p hash5["Red"]
+puts "hash5: #{hash5}"
 # 引数にハッシュオブジェクトを指定する方法：Hash[hash]
 # コピー元とコピー先のハッシュのキーと値は同じオブジェクト
 hash6 = Hash["Red" => 1, "Blue" => 2, "Green" => 3]
@@ -42,3 +46,20 @@ hash7 = Hash[hash6]
 p hash7
 puts hash6["Red"].object_id
 puts hash7["Red"].object_id
+
+# ハッシュのデフォルト値の設定
+# 設定方法は上記のfetchメソッドやHashクラスを使ったハッシュオブジェクトの作成で説明済み
+# ハッシュのデフォルト値として返される値は毎回異なるオブジェクト
+
+# newで作成した際にdefault値を設定していてfetchメソッドを使った場合default値は無視される
+# そのため、存在しないキーを指定した場合はKeyErrorが発生する
+hash8 = Hash.new("none")
+# p hash8.fetch("Red") # KeyErrorが発生する処理
+
+# defaultメソッド
+# default値を取得したり設定できる
+hash9 = Hash.new("none")
+p hash9.default
+
+hash9.default = "undefined"
+p hash9.default
