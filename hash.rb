@@ -84,3 +84,22 @@ p hash11
 hash12 = {"Red" => 1, "Blue" => 2, "Green" => 3}
 p hash12.length
 p hash12.size
+
+# ハッシュに対する繰り返し処理
+hash13 = {"Red" => 1, "Blue" => 2, "Green" => 3}
+# eachメソッド
+# 別名メソッドにeach_pairメソッドもある。使い方は同じ
+hash13.each {|key, value|
+  puts "#{key}: #{value}"
+}
+
+# each_keyメソッド
+# keyだけ必要な時に使用
+hash13.each_key {|key|
+  puts "#{key}"
+}
+
+# each_valueメソッド
+hash13.each_value {|value|
+  puts "#{value}"
+}
