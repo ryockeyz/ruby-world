@@ -73,9 +73,14 @@ hash10["Yellow"] = 5
 p hash10
 
 # storeメソッドを使用
-hash10 = {"Red" => 1, "Blue" => 2, "Green" => 3}
-p hash10
-hash10.store("Yellow", 4)
-p hash10
-hash10.store("Yellow", 5)
-p hash10
+hash11 = {"Red" => 1, "Blue" => 2, "Green" => 3}
+p hash11
+hash11.store("Yellow", 4)
+p hash11
+hash11.store("Yellow", 5)
+p hash11
+
+# ハッシュのサイズを取得
+hash12 = {"Red" => 1, "Blue" => 2, "Green" => 3}
+p hash12.length
+p hash12.size
