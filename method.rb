@@ -43,3 +43,12 @@ end
 printGreeting "Hello"
 printGreeting "Hello", "Taro"
 printGreeting "Hello", "Taro", "Jiro"
+
+# メソッドから戻り値を取得
+# returnは省略可能、省略した場合はメソッド内の最後の指揮を評価した値が戻り値となる
+def calc num1, num2
+  return num1 + num2
+end
+
+sum = calc 10, 20
+puts sum
