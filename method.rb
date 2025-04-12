@@ -27,12 +27,9 @@ def printStr str
 end
 printStr "Hello"
 
+# デフォルト値を設定
 def printMsgName name, msg = "Hello"
   puts "#{msg}, #{name}"
 end
 printMsgName "taro"
 printMsgName "taro", "Goodbye"
-
-def addString str
-  str << ", Japan"
-end
