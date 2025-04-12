@@ -33,3 +33,13 @@ def printMsgName name, msg = "Hello"
 end
 printMsgName "taro"
 printMsgName "taro", "Goodbye"
+
+# 引数を配列として受け取る
+# 引数に指定した最後の変数の前に*を付けることで、余った引数を要素とする配列として受け取ることができる
+# もしメソッドの引数が2つで最後を引数に*を付けたが、渡された引数が1つの場合エラーにはならないが、2つ目の引数には空配列が入る
+def printGreeting msg, *names
+  puts "#{msg}, #{names.to_s}"
+end
+printGreeting "Hello"
+printGreeting "Hello", "Taro"
+printGreeting "Hello", "Taro", "Jiro"
