@@ -52,3 +52,13 @@ end
 
 sum = calc 10, 20
 puts sum
+
+# 多重代入を使って複数の戻り値を取得
+# returnは省略できない
+def calc2 num1, num2
+  return num1 + num2, num1 - num2
+end
+
+plus, minus = calc2 10, 25
+puts plus
+puts minus
